@@ -1,4 +1,4 @@
-let array = ['l', 'a', 'p', 't', 'o', 'p'];
+let array = ['s', 't', 'a', 'r', 'r', 'y'];
 
 function reversedArray(array){
   for(let i = array.length-1; i >= (array.length-1)/2; i--){
