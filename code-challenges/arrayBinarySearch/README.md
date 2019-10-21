@@ -16,7 +16,7 @@ Storage: O(1)
 
 
 ### Reference
-Code located at: 
+Code located at: https://github.com/jmerlemeier/data-structures-and-algorithms/tree/master/code-challenges/arrayBinarySearch
 
 ### Task List
  - [ ] Top-level README “Table of Contents” is updated
@@ -27,5 +27,5 @@ Code located at:
      - [ ] Edge Case (if applicable/obvious)
  - [x] README for this challenge is complete
      - [x] Summary, Description, Approach & Efficiency, Solution
-     - [ ] Link to code
+     - [x] Link to code
      - [x] Picture of whiteboard
