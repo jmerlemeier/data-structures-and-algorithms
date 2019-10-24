@@ -9,10 +9,13 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  let end = ' The end.';
-  let modstring = str + end;
-  return modstring;
+  return `${str} The end.`
 };
+
+//Alt soln
+ // let end = ' The end.';
+  // let modstring = str + end;
+  // return modstring;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
