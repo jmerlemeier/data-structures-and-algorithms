@@ -19,7 +19,8 @@ linkedlist4.head.next.next = new Node(8);
 linkedlist4.head.next.next.next = new Node(9);
 
 
-describe('Test Challenge 12', () => {
+//TEST for MERGING 2 LINKED LISTS
+describe('Test Challenge #1 for Lab-08', () => {
   test('This will return a zipped list when given two lists', () => {
     linkedlist3.mergeLists(linkedlist4);
     expect(linkedlist3.head.next.value).toEqual(6);
