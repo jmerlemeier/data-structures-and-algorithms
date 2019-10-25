@@ -96,6 +96,28 @@ class LinkedList {
     }
   }
 
+  valueFromEnd(value) {
+    let currentNode = this.head;
+    let counter = 0;
+
+    while (currentNode !== null) {
+        counter++
+        currentNode = currentNode.next;
+    }
+
+    if (counter <= value || value < 0) {
+        return 'Exception';
+    }
+
+    currentNode = this.head;
+    let targetCounter = counter - value;
+
+    for (let i = 1; i < targetCounter; i++) {
+        currentNode = currentNode.next;
+    }
+    return currentNode.value
+}
+
   mergeLists(linkedlist2) {
     let current = this.head;
     let secondCurrent = linkedlist2.head;
@@ -133,17 +155,3 @@ module.exports = {
   linkedList: LinkedList,
   node: Node,
 }
-
-
-//from another file.
-//========== Execultable Code ===========
-// const LinkedList = new LinkedList();
-// LinkedList.append(1);
-// LinkedList.insertBefore(1, 0);
-// console.log(JSON.stringify(11));
-
-// LinkedList.head = new Node(2);
-// LinkedList.head.next = new Node(3);
-
-
-// module.exports = Linkedlist;
