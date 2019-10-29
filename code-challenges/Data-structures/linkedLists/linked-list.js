@@ -5,12 +5,11 @@ class Node {
     this.value = value;
     this.next = null;
     this.size = 0;
-
   }
 }
 
 class LinkedList {
-  constructor(value) {
+  constructor() {
     this.head = null;
     this.size = 0;
   }
@@ -20,7 +19,7 @@ class LinkedList {
     let node = new Node(value);
 
     //set a variable for currentNode node. OUR POINTER!
-    let currentNode;
+    let currentNode = this.head;
 
     //if linked list brand new and we have no nodes, need to check if has head.
     //An initial linked list has a null head.
@@ -29,11 +28,6 @@ class LinkedList {
       this.size++;
       return;
     }
-
-    //If head exists(not null), than we have at least one node.
-    //Set currentNode to the head; 
-    //TEMPORARILY ACTING AS POINTER
-    currentNode = this.head;
 
     //start a while loop
     //This will show you if there are multiple nodes.

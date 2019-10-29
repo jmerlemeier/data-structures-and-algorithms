@@ -3,11 +3,20 @@
 ## Table of Contents
 Data Structure | Challenge
 -------------- | ---------------
+Stacks/Queue | Implement a Queue using 2 stacks
 LinkedList | Merge 2 lists
 LinkedList | k-th value from the end
 LinkedList | Linked list insertions
 <!-- [GitHub](http://github.com) -->
+***
 
+# Stacks and Queues
+
+## Challenge
+Create a new PseudoQueue class. Do not use an existing Quene. Instead, this PseudoQueue class will implement our standard queue interface, but will internally only utilize 2 stack objects. Ensure that you create your class with these methods:
+  - enqueue(value): inserts value into the PseudoQueue.
+  - dequeue(): which extracts a value from the PseudoQueue.
+  
 ***
 
 # Merge 2 Linked Lists 
