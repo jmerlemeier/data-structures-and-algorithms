@@ -3,11 +3,31 @@
 ## Table of Contents
 Data Structure | Challenge
 -------------- | ---------------
+Stacks/Queue | FIFO Animal Shelter
 Stacks/Queue | Implement a Queue using 2 stacks
 LinkedList | Merge 2 lists
 LinkedList | k-th value from the end
 LinkedList | Linked list insertions
 <!-- [GitHub](http://github.com) -->
+  
+***
+
+# First-in, First out Animal Shelter using 2 Queues
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+
+## Challenge
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+## Approach & Efficiency
+I created 2 PseudoQueues using 2 stacks and stack methods. One queue was for cats and the other was for dogs.
+Time: 0(1)
+Space: 0(n)
+
+## Solution
+![animalshelter_whiteboard](assets/animal_WB.jpg)
+
 ***
 
 # Stacks and Queues
