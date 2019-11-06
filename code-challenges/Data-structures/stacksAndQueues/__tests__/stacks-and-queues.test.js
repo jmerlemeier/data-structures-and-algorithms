@@ -1,3 +1,7 @@
+'use strict';
+
+const { Stack, Queue } = require('../stacks-and-queues.js');
+
 /** Write tests to prove the following functionality:
 
 Can successfully push onto a stack
