@@ -13,9 +13,9 @@ const appendTheEnd = (str) => {
 };
 
 //Alt soln
- // let end = ' The end.';
-  // let modstring = str + end;
-  // return modstring;
+// let end = ' The end.';
+// let modstring = str + end;
+// return modstring;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
