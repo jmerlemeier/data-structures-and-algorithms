@@ -33,7 +33,7 @@ class LinkedList {
     //This will show you if there are multiple nodes.
     while (currentNode.next){
       //in here we can definietly say there is an existing node.
-      currentNode = currentNode.next; //transporting us to the end 
+      currentNode = currentNode.next; //transporting us to the end
     }
     //Set currentNode.next to a new Node
     currentNode.next = node;
@@ -42,45 +42,45 @@ class LinkedList {
 
   insertBefore(value, newValue) {
     let node = new Node(newValue);
-  
+
     //track previous
     let currentNode = this.head;
     let previousNode = this.head;
-  
-     if(currentNode.value === value){
+
+    if(currentNode.value === value){
       node.next = currentNode;
       this.head = node;
       this.size++;
-     } else {
-  
-    currentNode = currentNode.next;
-  
-    //Lists can only go FORWARD
-    while (currentNode){
-      if(currentNode.value === value){
-        previousNode.next = node;
-        node.next = currentNode;
-        this.size++;
-        break;
-      }
-      //Move one step forward
+    } else {
+
+      currentNode = currentNode.next;
+
+      //Lists can only go FORWARD
+      while (currentNode){
+        if(currentNode.value === value){
+          previousNode.next = node;
+          node.next = currentNode;
+          this.size++;
+          break;
+        }
+        //Move one step forward
         previousNode = previousNode.next;
         currentNode = currentNode.next;
       }
     }
-   }
-  
-   insertAfter(value, newValue) {
+  }
+
+  insertAfter(value, newValue) {
     var node = new Node(newValue)
     let currentNode = this.head;
-  
+
     if(currentNode.value === value) {
       node.next = currentNode;
       this.head = node;
     } else {
       currentNode = currentNode.next;
     }
-  
+
     while(currentNode) {
       if(currentNode.value === value) {
         node.next = currentNode.next;
@@ -95,22 +95,22 @@ class LinkedList {
     let counter = 0;
 
     while (currentNode !== null) {
-        counter++
-        currentNode = currentNode.next;
+      counter++
+      currentNode = currentNode.next;
     }
 
     if (counter <= value || value < 0) {
-        return 'Exception';
+      return 'Exception';
     }
 
     currentNode = this.head;
     let targetCounter = counter - value;
 
     for (let i = 1; i < targetCounter; i++) {
-        currentNode = currentNode.next;
+      currentNode = currentNode.next;
     }
     return currentNode.value
-}
+  }
 
   mergeLists(linkedlist2) {
     let current = this.head;

@@ -3,15 +3,15 @@
 //Use stacks and queues
 
 //input string
-//outpuf boolean 
-//depending on symetry 
+//outpuf boolean
+//depending on symetry
 //regex to get rid of non bracket characters
 //use stack
 //count opening and see if same as closing
 
 function validateBrackets(str) {
 
-  //filter method with arrays. 
+  //filter method with arrays.
   //make array with each item in string is a character inarray
   //filter returning an array of things that are true of callback
   //.includes --> is the little inthe bigger?
@@ -40,10 +40,10 @@ function validateBrackets(str) {
         return false;
       }
     }
-  } 
-return stack.length === 0; 
+  }
+  return stack.length === 0;
 }
-    
+
 
 
 // =========== EXECUTABLE CODE =============

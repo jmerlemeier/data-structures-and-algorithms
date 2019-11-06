@@ -1,7 +1,5 @@
-let Stack = require('../queue-with-stacks').stack;
+// let Stack = require('../queue-with-stacks').stack;
 let Queue = require('../queue-with-stacks').pseudoClass;
-
-
 
 describe('Test Challenge 1', () => {
   test('Can add a value to the stack', () => {
