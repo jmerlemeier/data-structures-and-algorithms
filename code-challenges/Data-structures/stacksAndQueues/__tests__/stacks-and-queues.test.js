@@ -23,4 +23,4 @@ Can successfully dequeue out of a queue the expected value
 Can successfully peek into a queue, seeing the expected value
 Can successfully empty a queue after multiple dequeues
 Can successfully instantiate an empty queue
-Ensure your tests are passing before you submit your solution. */
+Ensure your tests are passing before you submit your solution.  */
