@@ -1,8 +1,8 @@
 'use strict';
 
 class Node {
-  constructor(){
-    this.value = value;
+  constructor(value){
+    this.value = value
     this.next = null;
   }
 }
@@ -24,7 +24,7 @@ class Stack {
     let result = this.topOfStack;
     if (this.topOfStack) {
       this.topOfStack = this.topOfStack.next;
-    };
+    }
     return result.value;
   }
 
@@ -60,7 +60,7 @@ class Queue {
     let removed = this.front;
     this.front = this.front.next;
     this.length--
-    return result.value;
+    return removed.value;
   }
 
   peek() {
@@ -74,3 +74,5 @@ class Queue {
     }
   }
 }
+
+module.exports = { Node, Stack, Queue}

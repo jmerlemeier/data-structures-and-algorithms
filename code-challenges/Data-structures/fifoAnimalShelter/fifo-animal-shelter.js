@@ -6,7 +6,7 @@ class Stack {
   }
 
   push(value){
-   return this.storage.push(value);
+    return this.storage.push(value);
   }
 
   pop(){
@@ -17,7 +17,7 @@ class Stack {
 class PseudoQueue {
   constructor(){
     this.stack1 = new Stack();
-    this.stack2 = new Stack(); 
+    this.stack2 = new Stack();
   }
   enqueue(value) {
     this.stack1.push(value);
@@ -25,8 +25,8 @@ class PseudoQueue {
 
   dequeue() {
     if (this.stack2.storage.length === 0) {
-      if (this.stack1.storage.length === 0) { 
-        return 'Cannot dequeue because storage is empty'; 
+      if (this.stack1.storage.length === 0) {
+        return 'Cannot dequeue because storage is empty';
       }
       while (this.stack1.storage.length > 0) {
         let plate = this.stack1.storage.pop();
@@ -40,7 +40,7 @@ class PseudoQueue {
 class AnimalShelter {
   constructor(){
     this.cat = new PseudoQueue();
-    this.dog = new PseudoQueue(); 
+    this.dog = new PseudoQueue();
   }
 
   enqueue(animal){
@@ -53,14 +53,14 @@ class AnimalShelter {
   }
 
   dequeue(preference){
-    if(preference == 'dog'){
+    if(preference === 'dog'){
       return this.dog.dequeue(preference)
-    } else if(preference == 'cat'){
-       return this.cat.dequeue(preference)
+    } else if(preference === 'cat'){
+      return this.cat.dequeue(preference)
     } else {
-       return null;
+      return null;
     }
-  } 
+  }
 }
 
 //=========================

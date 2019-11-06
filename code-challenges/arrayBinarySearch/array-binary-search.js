@@ -1,12 +1,12 @@
 let testArray = [4, 8, 15, 16, 23, 42];
 let testKey = 15;
 
-const BinarySearch = (arr, key) => {
+const binarySearch = (arr, key) => {
   let left = 0;
   let right = arr.length-1;
 
   while(left <= right){
-    mid = Math.floor((left + right)/2);
+    let mid = Math.floor((left + right)/2);
 
     if(arr[mid] < key){
       left = mid+1;
@@ -18,4 +18,4 @@ const BinarySearch = (arr, key) => {
   return -1;
 }
 
-BinarySearch(testArray, testKey);
+binarySearch(testArray, testKey);

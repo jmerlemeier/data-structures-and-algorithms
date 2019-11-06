@@ -1,5 +1,5 @@
 xdescribe('Happy Path - Expected outcome', function() {
-  it('Happy path - expected outcome',  () => {
+  it('Happy path - expected outcome', () => {
     //testing of happy path goes here.
   });
   it('Expected failure', () => {
