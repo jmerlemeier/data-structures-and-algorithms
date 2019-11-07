@@ -3,6 +3,7 @@
 ## Table of Contents
 Data Structure | Challenge
 -------------- | ---------------
+Stacks/Queue | Stacks and Queues Implementation
 Stacks/Queue | FIFO Animal Shelter
 Stacks/Queue | Implement a Queue using 2 stacks
 LinkedList | Merge 2 lists
@@ -10,6 +11,51 @@ LinkedList | k-th value from the end
 LinkedList | Linked list insertions
 <!-- [GitHub](http://github.com) -->
   
+  
+***
+
+# Stacks and Queues - Classes with Methods
+[Stacks and Queue notes by Julie Erlemeier](https://github.com/jmerlemeier-401-advanced-javascript/seattle-javascript-401d32/wiki/Stacks-and-Queues)
+
+## Challenge
+From Code Fellows 401 Javascript Curriculum (2019)
+
+### Features
+
+1. Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+
+2. Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+
+  - This object should be aware of a default empty value assigned to top when the stack is created.
+  - Define a method called *push* which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+  - Define a method called *pop* that does not take any argument, removes the node from the top of the stack, and returns the node’s value.
+  - Define a method called *peek* that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
+  - Define a method called *isEmpty* that does not take an argument, and returns a boolean indicating whether or not the stack is empty.
+
+1. Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+
+  - This object should be aware of a default empty value assigned to front when the queue is created.
+  - Define a method called *enqueue* which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
+  - Define a method called *dequeue* that does not take any argument, removes the node from the front of the queue, and returns the node’s value.
+  - Define a method called *peek* that does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
+  - Define a method called *isEmpty* that does not take an argument, and returns a boolean indicating whether or not the queue is empty.
+
+## Approach & Efficiency
+I decided to use an array for the background of my stack and queue class. I did this because they are easy to visualize. I made sure to keep in mind that stacks are LIFO and queues are FIFO.
+
+## API
+Stack
+- push()
+- pop()
+- peek()
+- isEmpty()
+
+Queue
+- enqueue()
+- dequeue()
+- peek()
+- isEmpty()
+
 ***
 
 # First-in, First out Animal Shelter using 2 Queues
