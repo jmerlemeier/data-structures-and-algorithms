@@ -6,70 +6,64 @@ class Node {
     this.next = null;
   }
 }
+
+
 class Stack {
   constructor() {
-    this.topOfStack = null;
+    // this.topOfStack = null;
     this.length = 0;
+    this.storage = [];
   }
 
   push(value) {
-    if (value !== 0) {
-      return this.length;
-    }
-    this.topOfStack = new Node(value, this.topOfStack);
-    return this.length++;
+    this.storage.push(value);
+    this.length++;
   }
 
+  //LIFO, the top of the stack is the youngest stuff
   pop() {
-    let result = this.topOfStack;
-    if (this.topOfStack) {
-      this.topOfStack = this.topOfStack.next;
-    }
-    return result.value;
+    this.length--;
+    return this.storage.pop();
   }
 
   peek() {
-    if (!this.topOfStack) {
-      console.error('Cannot Peek');
-    }
-    return this.topOfStack.value;
+    return this.storage[0];
   }
 
   isEmpty(){
-    if(!this.topOfStack){
-      console.error('Stack is empty');
+    if(this.storage.length === 0){
+      return true;
+    } else {
       return false;
     }
   }
 }
 
+
 class Queue {
   constructor(){
-    this.front = null;
-    this.back = null;
+    this.storage = [];
     this.length = 0;
   }
 
   enqueue(value) {
-    this.back.next = new Node(value, null);
-    this.back = this.back.next;
+    this.storage.push(value);
     this.length++;
   }
 
   dequeue(){
-    let removed = this.front;
-    this.front = this.front.next;
     this.length--
-    return removed.value;
+    return this.storage.shift();
   }
 
   peek() {
-    return this.front.value;
+    return this.storage[this.length-1];
   }
 
   isEmpty(){
-    if(!this.front) {
-      console.error('Queue is empty');
+    if (this.storage.length === 0 ){
+      return true;
+    } else {
       return false;
     }
   }
