@@ -3,6 +3,7 @@
 ## Table of Contents
 Data Structure | Challenge
 -------------- | ---------------
+Sort | Insertion Sort
 Binary Trees | FindMaxValue
 Stacks/Queue | Stacks and Queues Implementation
 Stacks/Queue | FIFO Animal Shelter
@@ -11,6 +12,22 @@ LinkedList | Merge 2 lists
 LinkedList | k-th value from the end
 LinkedList | Linked list insertions
 <!-- [GitHub](http://github.com) -->
+  ***
+# InsertionSort
+Insertion Sort is a sorting algorithm where you traverse, element by element, and compare each element to the one that came before it. You look for the element before to be less than to current element (stored in a temporary variable).
+
+## Challenge Description
+I traversed my array using two indices: 'i' and 'j'. I used a variable called 'temp' to store the value of the current index. I used a for loop to traverse the length of the array and a while loop to check values of indecies.
+
+## Approach & Efficiency
+I used two loops so my Big(0) time is O(n^2). I did not create any new structures, so my Big(O) time is O(1).
+
+## Solution
+![whiteboard](./code-challenges/insertionSort/assets/pass_1.jpg)
+![whiteboard](./code-challenges/insertionSort/assets/pass_2.jpg)
+![whiteboard](./code-challenges/insertionSort/assets/pass_3.jpg)
+![whiteboard](./code-challenges/insertionSort/assets/pass_4.jpg)
+![whiteboard](./code-challenges/insertionSort/assets/pass_5.jpg)
   ***
 
 # Find the Maximum Value in a Binary Tree
