@@ -19,7 +19,7 @@ class LinkedList {
     let node = new Node(value);
 
     //set a variable for currentNode node. OUR POINTER!
-    let currentNode = this.head;
+    let current = this.head;
 
     //if linked list brand new and we have no nodes, need to check if has head.
     //An initial linked list has a null head.
@@ -31,12 +31,12 @@ class LinkedList {
 
     //start a while loop
     //This will show you if there are multiple nodes.
-    while (currentNode.next){
+    while (current.next){
       //in here we can definietly say there is an existing node.
-      currentNode = currentNode.next; //transporting us to the end
+      current = current.next; //transporting us to the end
     }
-    //Set currentNode.next to a new Node
-    currentNode.next = node;
+    //Set current.next to a new Node
+    current.next = node;
     this.size++;
   }
 
@@ -126,6 +126,31 @@ class LinkedList {
     }
     // console.log(JSON.stringify(linkedlist));
     return linkedlist;
+  }
+
+
+  includes(value){
+    let current = this.head;
+
+    if(!this.head) {
+      return 'Exception';
+    }
+
+    while(current) {
+      if (current.value === value) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
+  }
+
+  toString(){
+  //returns string of all values in linked list
+    let current = this.head;
+    while (current) {
+      return `${current.value} ->`
+    }
   }
 }
 
