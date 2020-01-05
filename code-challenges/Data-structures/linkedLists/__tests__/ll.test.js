@@ -61,3 +61,24 @@ describe('Test Challenge 5', () => {
     expect(linkedlist3.head.next.value).toEqual(6);
   })
 });
+
+//TEST if value included in LINKED LIST
+describe('Test Challenge 6', () => {
+  test('This will return true if a given value is found in the list', () => {
+    expect(linkedlist3.includes(2)).toBe(true);
+  })
+})
+
+//TEST if value NOT included in LINKED LIST
+describe('Test Challenge 7', () => {
+  test('This will return false if a given value is NOT found in the list', () => {
+    expect(linkedlist3.includes(44)).toBe(false);
+  })
+})
+
+
+describe('Test Challenge 8', () => {
+  test('This will return all values in a linked list', () => {
+    expect(linkedlist4.toString()).toBe('6 ->');
+  })
+})
