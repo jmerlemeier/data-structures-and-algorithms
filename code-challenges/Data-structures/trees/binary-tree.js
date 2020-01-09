@@ -1,12 +1,19 @@
 'use strict';
 
+class Node {
+  constructor(value, left =null, right=null){
+    this.value = value;
+    this.right = right;
+    this.left = left;
+  }
+}
+
 class BinaryTree{
   constructor(root){
     this.root = root;
   }
 
   findMaxValue(){
-
     let max = this.root.value;
 
     let _walk = (node) => {
@@ -23,15 +30,12 @@ class BinaryTree{
     _walk(this.root);
     return max;
   }
+
+  // breadthFirst (root) {
+    
+  // }
 }
 
-class Node {
-  constructor(value, left =null, right=null){
-    this.value = value;
-    this.right = right;
-    this.left = left;
-  }
-}
 
 // console.log(tree.findMaxValue());
 

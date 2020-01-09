@@ -1,25 +1,42 @@
 'use strict';
 
-//Use stacks and queues
+class Stack {
+  constructor() {
+    this.length = 0;
+    this.storage = [];
+  }
 
-//input string
-//outpuf boolean
-//depending on symetry
-//regex to get rid of non bracket characters
-//use stack
-//count opening and see if same as closing
+  push(value) {
+    this.storage.push(value);
+    this.length++;
+  }
+
+  pop() {
+    this.length--;
+    return this.storage.pop();
+  }
+
+  peek() {
+    return this.storage[0];
+  }
+
+  isEmpty(){
+    if(this.storage.length === 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
 
 function validateBrackets(str) {
-
-  //filter method with arrays.
-  //make array with each item in string is a character inarray
-  //filter returning an array of things that are true of callback
-  //.includes --> is the little inthe bigger?
   const bracketsStr = str
+    //split on every character
     .split('')
+    //create new array of only brackets
     .filter(bracket => '{}[]()'.includes(bracket));
 
-  const stack = [];
+  const stack = new Stack;
 
   //make key value pairs
   const pair = {
@@ -44,7 +61,4 @@ function validateBrackets(str) {
   return stack.length === 0;
 }
 
-
-
-// =========== EXECUTABLE CODE =============
-console.log(validateBrackets('{(})'));
+module.exports = { Stack, validateBrackets};
